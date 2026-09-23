@@ -1,0 +1,12 @@
+{
+  "name": "ttt-arena",
+  "version": "0.1.0",
+  "description": "Tic-Tac-Toe Arena - Production-Grade Classical AI & Multiplayer Platform",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
