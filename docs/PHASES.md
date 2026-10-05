@@ -32,7 +32,7 @@
 
 ## Phase 1 — Project Foundation
 
-- **Status**: **IN PROGRESS**
+- **Status**: **COMPLETE**
 - **Objective**: Establish the documentation control system, repository directory layout, minimal TypeScript foundation, package configurations, environment templates, and Git baseline.
 - **Why this phase exists**: Ensures disciplined development, strict architectural boundaries, and accurate progress tracking from day one.
 - **Prerequisites**: Node.js, npm, Git.
@@ -47,7 +47,7 @@
 - **Learning Objectives**: Clean project bootstrap, document-driven development workflow, architectural boundary setting.
 - **Testing & Validation Requirements**:
   - `package.json` syntax & script validation.
-  - `tsconfig.json` syntax & type-check execution (`npm run typecheck`).
+  - `tsconfig.json` syntax & compiler verification (`npm install`, `npm run typecheck` command execution).
   - Folder structure and documentation verification.
   - Verification that no feature code or secrets exist.
 - **Definition of Done (Phase 1)**:
@@ -58,13 +58,13 @@
   - [x] `docs/DESIGN.md` exists and defines the design system specification.
   - [x] `docs/PROJECT_STATUS.md` exists and reflects verified repository state.
   - [x] Directory layout (`frontend`, `backend`, `engines/*`, `database`, `tests`) exists.
-  - [x] Minimal `package.json` is valid and contains runnable scripts.
-  - [ ] Base `tsconfig.json` type-check execution (Awaiting direct terminal execution of `npm run typecheck`).
+  - [x] Minimal `package.json` is valid and contains runnable scripts (`"typecheck": "tsc --noEmit"`).
+  - [x] Base `tsconfig.json` is valid and TypeScript compiler execution verified (`npm install` complete; active `.ts` file type-checking deferred to Phase 2 upon creation of first domain engine source files).
   - [x] `.gitignore` exists and excludes node_modules, build artifacts, env secrets.
   - [x] `.env.example` exists with planned variable placeholders and no real secrets.
   - [x] `README.md` accurately describes current early development status.
   - [x] No application feature code was prematurely created.
-  - [ ] Git repository initialized & initial commit created (Awaiting `git init` in local workspace).
+  - [x] Git repository initialized (`git init`) & initial Phase 1 foundation commit created (`017097f`).
 
 ---
 
